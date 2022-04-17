@@ -6,3 +6,5 @@ also we make <br>
 - create basline model
 - prediction landmark on real-life image
 - put sunglasses on real-life image
+
+download data <a href="https://www.kaggle.com/c/facial-keypoints-detection/data?select=training.zip"> here </a>
