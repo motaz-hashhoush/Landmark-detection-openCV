@@ -1,4 +1,6 @@
 hyperband/
 my_dir/
+__pycache__/
+data/
 
 

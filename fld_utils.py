@@ -1,4 +1,3 @@
-import os
 import numpy as np
 import matplotlib.pyplot as plt
 from pandas.io.parsers import read_csv
@@ -6,12 +5,9 @@ from sklearn.utils import shuffle
 from keras.models import model_from_json
 
 def load_data(validation_split):
-    # Create path to csv file
-    cwd = os.getcwd()
-    csv_path = os.path.join(cwd, "data/training.csv")
 
     # Load data from csv file into data frame, drop all rows that have missing values
-    data_frame = read_csv(csv_path)
+    data_frame = read_csv("data/training.csv")
     print(data_frame["Image"].count())
     data_frame = data_frame.dropna()
     print(data_frame["Image"].count())
